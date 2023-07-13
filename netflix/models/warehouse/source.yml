@@ -1,0 +1,24 @@
+version: 2
+sources:
+  - name: netflix
+    schema: public
+    descripiton: This is the schema
+    tables:
+      - name: city
+        description: One record per city 
+      - name: date
+      - name: dvd
+      - name: dvdreview
+      - name: genre
+      - name: member
+      - name: membership
+      - name: movieperson
+      - name: moviepersonrole
+      - name: payment
+      - name: payment_history
+      - name: rating
+      - name: rental
+      - name: rentalqueue
+      - name: role
+      - name: state
+      - name: zipcode
