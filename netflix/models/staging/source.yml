@@ -2,7 +2,6 @@ version: 2
 sources:
   - name: netflix
     schema: public
-    descripiton: This is the schema
     tables:
       - name: city
         description: One record per city 

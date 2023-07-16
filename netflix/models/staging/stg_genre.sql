@@ -2,7 +2,7 @@
 
 with source as (
 
-select * from {{source('netflix', 'member')}}
-
+    select * from {{source('netflix','genre')}}
 )
+
 select * from source
