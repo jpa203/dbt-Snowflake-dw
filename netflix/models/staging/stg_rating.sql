@@ -1,6 +1,6 @@
 -- removing punctuation
 
-{{ config(materialized='incremental')}}
+{{ config(materialized='table')}}
 with source as (
     
     select 

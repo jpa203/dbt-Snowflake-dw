@@ -2,10 +2,7 @@
 
 with source as (
 
-    select 
-    dvdtitle,
-    dvdreleasedate,
-    theaterreleasedate from {{source('netflix','dvd')}}
+    select * from {{source('netflix','dvd')}}
 )
 
-select * from source
+select *, current_timestamp() as ingestion_timestamp from source
