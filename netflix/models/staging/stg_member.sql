@@ -1,15 +1,27 @@
-{{ config(materialized='incremental')}}
+{{ config(materialized='table')}}
 
-with source as (
+with stg_snapshot as (
 
-select * from {{source('netflix', 'member')}}
+select * from {{ref('members_snapshot')}}
 
 )
 
-select *, current_timestamp() as ingestion_timestamp, 'Y' as current_flag from source
+select 
+memberid,
+memberfirstname,
+memberlastname,
+memberinitial, 
+memberaddres,
+memberaddressid,
+memberphone,
+memberemail, 
+memberpassword,
+membershipid,
+membershipsincedate, 
+current_timestamp() as ingestion_timestamp,
+CASE 
+    WHEN  dbt_valid_to is null then 'Y'
+    WHEN  dbt_valid_to is not null then 'N'
+end as current_flag 
 
-{% if is_incremental() %}
-
- where ingestion_timestamp > (select max(ingestion_timestamp) from {{ this }})
-
-{% endif %}
+from stg_snapshot

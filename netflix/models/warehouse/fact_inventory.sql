@@ -5,7 +5,7 @@ with source as (
     d.dvdid,
     g.genreid,
     r.ratingid,
-    sum(dvdquantityonhand) as dvdtotalquantity,
+    sum(dvdquantityonhand + dvdquantityonrent) as dvdtotalquantity, 
     sum(dvdquantitylost) as dvdtotallost,
     sum(dvdquantityonrent) as dvdtotalrent, 
     ((1 - (sum(dvdquantityonrent) / sum(dvdquantityonhand))) * 100) as dvdstock
@@ -45,17 +45,9 @@ from (
     join {{ref('stg_month')}} m on m.month = f.month_name
     where year = YEAR(CURRENT_DATE())
     group by dvdid, genreid, ratingid, monthid, dvdtotalquantity, dvdtotallost, dvdtotalrent, dvdpercentagestock
-) subquery
+) maxdate
 group by dvdid, genreid, ratingid, monthid, dvdtotalquantity, dvdtotallost, dvdtotalrent, dvdpercentagestock, max_extracted_day
 
 
 
 
-
-
-
--- select dvdid, genreid, ratingid, monthid, dvdtotalquantity, dvdtotallost, dvdtotalrent, round(dvdstock) as dvdpercentagestock
--- from final f
--- join {{ref('stg_month')}} m on m.month = f.month_name
--- where year = YEAR(CURRENT_DATE())
--- group by (dvdid, genreid, ratingid, monthid, dvdtotalquantity, dvdtotallost, dvdtotalrent, dvdpercentagestock)

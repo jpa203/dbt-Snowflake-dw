@@ -1,19 +1,14 @@
 -- cleaning spelling mistakes
 -- removing one column
 
-{{ config(materialized='incremental')}}
+{{ config(materialized='table')}}
 
 with dim_membership as (
 
     select
     membershipid, 
-    memmbershiptype as membershiptype,
-    membershiplimitpermonth,
-    membershipmonthlyprice,
-    membershipmonthlytax,
-    membershipdvdlostprice
-    
-     from {{ref('stg_membership')}}
+    memmbershiptype as membershiptype
+    from {{ref('stg_membership')}}
 
 )
 
