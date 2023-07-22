@@ -8,6 +8,7 @@ Cloud Datawarehouse Solution
 - DBT
 - Airflow (Orchestration)
 - ELT
+- Testing
 - Data Validation (Slack automation)
 - Security
 - Analytics
@@ -134,3 +135,37 @@ to the warehouse stage (but we will need to perform transformations so wait till
   we then used jinja language to extract all data and put it in a new table - again we need to change this to be able to perform some transformations as well. 
 
   dbt compile && dbt run 
+
+
+
+  -- we create our staging tables, where we do some data transformation, cleansing etc:
+    - stg_member:
+
+            -- added two columns, ingestion_timestamp and current_flag to represent SCD2 - using incremental  (do I need this for future data?)
+            -- also added initials for members
+
+doing data transformations in dbt to get it ready for dimensioanl modelling 
+
+
+
+## Fact Tables
+
+fact_inventory
+
+- An ingestion timestamp was added to the dvd column - in this scenario, the business takes a snapshot of the dvd table at the end of each day - using a stored procedure - and stores it in a historical dvd table. This allows our data warehouse to join on the dvd table and capture the last timestamp for a given month, so that we can join it on our fact table
+
+
+So for fact_inventory, we take a snapshot of the inventory at the end of every month, calculating how much of each dvd was on shelf compared to rented. 
+We do this by extracting the last timestamp from the dvd history table and then joining it onto our month table, where it sits at the month level. 
+
+At the end of each day, the dw copies data from the OLTP database and produces a timestamp with the DVD column
+This timestamp is then used to calculate end-of-month aggregates for ddvd inventory, including how much dvd is in stock each month - it joins to a dim_months table
+to allow for better analysis moving forward, so analysts can compare how many dvds are in stock, on rent, lost etc. on a month to month basis. 
+
+We implmement a SC2 for the members dimension - by creating a downstream pipeline where we detect any changes
+from the source data in based on a 'check' test (defining what columns we want to check) and then log these changes in our staging table, where a CASE statement was used to create a new 'current_flag' column with values 'Y' or 'N'  to indicate whether the row is the most recent or not.
+
+This way, we are able to keep track of a member's history in case they change their name, address, phone number, email etc.
+
+{show example}
+
