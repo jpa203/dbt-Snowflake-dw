@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: stg_dvd
+    columns:
+
+      - name: dvdid
+        description: "Primary Key - should be unique and not null"
+        tests:
+          - unique
+          - not_null
+
+      - name: dvdtitle
+        description: "DVD Names"
+        tests:
+          - dbt_utils.not_empty_string
+
+      - name: dvdquantityonhand
+        description: "Total DVD copies owned by Streamberry, can't be below 0"
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              inclusive: false 
+
+      - name: theaterreleasedate
+        description: "When the movie was released in theaters, with test for max date"
+        tests:
+          - dbt_utils.accepted_range:
+              max_value: "getdate()"
+
+
+  - name: stg_member
+    columns: 
+
+      - name: memberid
+        description: "PK - must be not null, can have redundancy because we are capturing SCD2"
+        tests: 
+          - not_null
+      
+      - name: memberaddres
+        description: "Member Address - Must not be an empty string"
+        tests: 
+          - dbt_utils.not_empty_string
+
+  - name: stg_payment
+    columns:
+      
+      - name: amountpaid
+        description: "The amount paid for a membership should be either 20 or 25"
+        tests:
+          - test_membership_cost
