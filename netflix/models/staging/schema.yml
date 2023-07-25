@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: stg_dvd
+    description: "Here is a test of documentation - this staging table shows all dvds owned by Streamberry"
     columns:
 
       - name: dvdid
