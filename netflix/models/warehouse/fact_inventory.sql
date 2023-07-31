@@ -1,4 +1,5 @@
-{{ config(materialized='table')}}
+{{ config(
+  materialized='table')}}
 
 with source as (
     select 
@@ -47,7 +48,3 @@ from (
     group by dvdid, genreid, ratingid, monthid, dvdtotalquantity, dvdtotallost, dvdtotalrent, dvdpercentagestock
 ) maxdate
 group by dvdid, genreid, ratingid, monthid, dvdtotalquantity, dvdtotallost, dvdtotalrent, dvdpercentagestock, max_extracted_day
-
-
-
-

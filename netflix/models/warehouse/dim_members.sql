@@ -1,9 +1,5 @@
--- cleaning data and performing transformations 
-        -- addinig intials
-        -- solving for null values, for better query performance
-        -- spelling check / renaming
-
-{{ config(materialized='table')}}
+{{ config(
+    materialized='table')}}
 
 with dim_members as (
     select 
@@ -23,4 +19,10 @@ with dim_members as (
 )
 
 select * from dim_members
+
+{% if is_incremental() %}
+
+  where effectivetimestamp >= (select max(effectivetimestamp) from {{ this }})
+
+{% endif %}
 
