@@ -34,7 +34,7 @@ fact_member as (
     from transformation
     join {{ref('dim_date')}} dt on dt.fulldate = date
 )
-select memberid, dvdid, stateid, paymentid, membershipid, dateid, round(membershipmonthlyprice) as membershipcost, round(membertotalvalue) as membervalue, 
+select memberid, dvdid, stateid, paymentid, membershipid, round(membershipmonthlyprice) as membershipcost, round(membertotalvalue) as membervalue, 
 round(discountoffer,2) as discount from fact_member 
 
 
