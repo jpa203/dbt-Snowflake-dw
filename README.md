@@ -121,6 +121,9 @@ This project will also capture SCD2s using the 'snapshots' directory and configu
 
 i.e.
 
+![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/da8e74d2-0eb9-4256-b99d-daf1cdaf19db)
+
+
 check_cols = ['memberlastname', 'memberinitial', 'memberaddres', 'memberphone', 'memberemail']
 
 In this case, unlike our other dim tables, the dim_members table will pull data from the snapshots table, as opposed to the staging tables, to preserve the SCD2 state.
@@ -130,12 +133,15 @@ Testing in dbt will also be conducted to ensure the validity of our data.
 ## Fact Tables
 
 - fact_inventory
-- 
+  
  ![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/8bd263d4-7bfe-4fdf-990e-f16672b8e07a)
 
 An ingestion timestamp was added to the dvd column - in this scenario, the business takes a snapshot of the dvd table at the end of each day - using a stored procedure - and stores it in a historical dvd table. This allows our data warehouse to join on the dvd table and capture the last timestamp for a given month, giving us end of month totals, including how many copies of a dvd is in stock.
 
 - fact_member
+
+![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/600a2285-6542-4687-8467-d44b3ee2823c)
+
 
 This fact table is at a transaction level and calculates a member's total value by finding the product of daily membership cost and  total days as a member. Based on a hierarchy established by the business, a discount coupon will be applied to membership fees ranging from 25% to 0%. As a member's total value increases, they will become eligible for more discounts, if they ask for one.
 
@@ -144,6 +150,8 @@ In order to keep track of a member's value, an SCD2 was implemented for dim_memb
 This way, we are able to keep track of a member's history in case they change their name, address, phone number, email etc.
 
 - fact_review
+
+ ![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/b944d08d-e11b-48e1-b435-3d000df87bf8)
 
 This fact table represents a monthly snapshot of a user's average rating based on the genre. The business will use this fact table to tailor marketing campaigns to recommend dvds that fit the user's preferences based on their most preferred genre according to the ratings given.
 
