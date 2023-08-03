@@ -2,3 +2,4 @@
 /Users/jazzopardi/dev/snowflake-dw/code/pipeline.conf
 *.conf
 .DS_Store
+__pycache__/
