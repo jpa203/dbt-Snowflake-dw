@@ -14,6 +14,9 @@ Streamberry has decided to migrates its existing OLTP database system to Amazon 
 
 The data engineering team will model the data warehouse using Kimball's Dimensional Modeling - a bottom-up approach that prioritizes low initial investment through data marts and self-service reporting (through easy integration with BI tools). Stakeholders agreed this was the most effective approach for a greenfield project.
 
+![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/0a30635d-34aa-4dd5-8cb3-f08d8e07c8b6)
+
+
 ## Requirements Gathering
 
     * Customer Overview
@@ -71,7 +74,8 @@ A date dimension doesn't exist in our schema but is a must for a dimensional dat
 
 ## Bus Matrix
 
-/Users/jazzopardi/dev/snowflake-dw/Diagrams/BusMatrix.png
+![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/6dffa2c4-e010-4300-b4fc-e9b1d1292400)
+
 
 A bus matrix is a visual representation or framework used for organizing and understanding the relationships between business processes, data sources and data dimensions.
 
@@ -96,6 +100,8 @@ However, since we know that the data was kept in a highly normalized OLTP databa
 This changes when we consider the level of grain and subsequent aggregations that must take place to transform our data from an OLTP system to a datawarehouse OLAP system with facts and dims.
 
 ## Dimensional Modeling
+
+ ![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/69773bba-9653-4cb8-8ab6-2a20d38b6372)
 
 We have created our physical ERD which will help provide visual guidance throughout this process. In addition to the fact and dim tables defined above, two date dimensions have been added to the mix - dim_date and dim_month - to reflect the different levels of grain in our model.
 
@@ -154,7 +160,7 @@ dbt provides a robust framework to conduct both singular and generic tests, with
 
 To highlight as such, several generic tests were added to the Streamberry data warehouse, including some which are customized, as well as singluar tests to demonstrate the capability of dbt to conduct unit tests too.
 
-![images](testing.png)
+![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/e0e426fe-e207-4fbd-9b0e-2b3a1e9e1378)
 
 In the above screenshot, we run a simple generic test deliberately aimed to fail by accepting only 'test' as a value in the dvdtitle column in dvds. A good use case for this would be an attribute that has low cardinality.
 
@@ -167,6 +173,9 @@ At this stage, our data warehosue has been built and we've implemented testing t
 Best practice suggests that we provide documentation of our data warehouse, and we can achieve this by running a dbt command known as - dbt docs generate - which will compile our yml files into one json file to serve up as a website.
 
 We can now call dbt docs serve to view our documentation on our local machine.
+
+![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/9f56891b-681c-48bd-a018-7cc907a93dd3)
+
 
 ## Orchestration - Airflow
 
@@ -184,7 +193,12 @@ For this, certain tables that are expected to grow/change frequently have been a
 
 This is particularly the case for SCD 0s, such as dvd, where we just append records, and don't want to run transformations on the whole  table again.
 
+ ![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/83511d62-c87b-4b37-8230-674953a6762b)
+
+
 ## Visualization
 
 As a final step, the data engineering team created a pipeline from the data warehouse to a business intelligience tool known as Tableau, to demonstrate the insights of their work and highlight the benefit it provides for business and data anlaysts alike.
+
+ ![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/7b800a41-7ccd-41e6-a1d1-329111dcca71)
 
