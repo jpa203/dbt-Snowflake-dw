@@ -130,6 +130,8 @@ Testing in dbt will also be conducted to ensure the validity of our data.
 ## Fact Tables
 
 - fact_inventory
+- 
+ ![image](https://github.com/jpa203/dbt-Snowflake-dw/assets/104007355/8bd263d4-7bfe-4fdf-990e-f16672b8e07a)
 
 An ingestion timestamp was added to the dvd column - in this scenario, the business takes a snapshot of the dvd table at the end of each day - using a stored procedure - and stores it in a historical dvd table. This allows our data warehouse to join on the dvd table and capture the last timestamp for a given month, giving us end of month totals, including how many copies of a dvd is in stock.
 
