@@ -71,6 +71,8 @@ A date dimension doesn't exist in our schema but is a must for a dimensional dat
 
 ## Bus Matrix
 
+/Users/jazzopardi/dev/snowflake-dw/Diagrams/BusMatrix.png
+
 A bus matrix is a visual representation or framework used for organizing and understanding the relationships between business processes, data sources and data dimensions.
 
 It provides a structured view of the business processes and the corresponding dimensions that are relevant to the organization.
