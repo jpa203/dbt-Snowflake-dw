@@ -1,0 +1,12 @@
+[2023-07-30T18:48:13.075-0400] {processor.py:157} INFO - Started process (PID=16847) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-07-30T18:48:13.076-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-07-30T18:48:13.076-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.076-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-07-30T18:48:13.109-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.109-0400] {example_python_operator.py:90} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2023-07-30T18:48:13.112-0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-07-30T18:48:13.402-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.401-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_python_operator
+[2023-07-30T18:48:13.405-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.404-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_python_operator
+[2023-07-30T18:48:13.410-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.409-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_python_operator
+[2023-07-30T18:48:13.413-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.413-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:48:13.416-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.416-0400] {dag.py:2763} INFO - Creating ORM DAG for example_python_operator
+[2023-07-30T18:48:13.419-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:13.419-0400] {dag.py:3504} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-07-30T18:48:13.425-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.350 seconds

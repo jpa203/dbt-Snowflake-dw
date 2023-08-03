@@ -1,0 +1,5 @@
+[2023-07-30T18:48:07.423-0400] {processor.py:157} INFO - Started process (PID=16841) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-07-30T18:48:07.425-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-07-30T18:48:07.425-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:07.425-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-07-30T18:48:07.427-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-07-30T18:48:07.698-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py took 0.274 seconds

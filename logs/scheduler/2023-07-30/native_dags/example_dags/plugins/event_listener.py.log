@@ -1,0 +1,10 @@
+[2023-07-30T18:47:36.373-0400] {processor.py:157} INFO - Started process (PID=16792) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py
+[2023-07-30T18:47:36.374-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py for tasks to queue
+[2023-07-30T18:47:36.374-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:36.374-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py
+[2023-07-30T18:47:36.375-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py
+[2023-07-30T18:47:36.644-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py took 0.272 seconds
+[2023-07-30T18:49:57.357-0400] {processor.py:157} INFO - Started process (PID=17316) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py
+[2023-07-30T18:49:57.359-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py for tasks to queue
+[2023-07-30T18:49:57.359-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:49:57.359-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py
+[2023-07-30T18:49:57.360-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py
+[2023-07-30T18:49:57.644-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py took 0.287 seconds

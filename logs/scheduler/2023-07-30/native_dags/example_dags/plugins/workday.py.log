@@ -1,0 +1,10 @@
+[2023-07-30T18:47:32.286-0400] {processor.py:157} INFO - Started process (PID=16782) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-07-30T18:47:32.288-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-07-30T18:47:32.288-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:32.288-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-07-30T18:47:32.688-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-07-30T18:47:32.939-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.653 seconds
+[2023-07-30T18:49:53.344-0400] {processor.py:157} INFO - Started process (PID=17306) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-07-30T18:49:53.346-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-07-30T18:49:53.346-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:49:53.346-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-07-30T18:49:53.637-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-07-30T18:49:53.909-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.565 seconds

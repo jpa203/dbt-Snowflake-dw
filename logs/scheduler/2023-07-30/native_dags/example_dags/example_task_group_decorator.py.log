@@ -1,0 +1,11 @@
+[2023-07-30T18:47:53.567-0400] {processor.py:157} INFO - Started process (PID=16825) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2023-07-30T18:47:53.569-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2023-07-30T18:47:53.569-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.569-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2023-07-30T18:47:53.611-0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group_decorator']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2023-07-30T18:47:53.908-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.908-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_task_group_decorator
+[2023-07-30T18:47:53.911-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.911-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_task_group_decorator
+[2023-07-30T18:47:53.913-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.913-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_task_group_decorator
+[2023-07-30T18:47:53.917-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.916-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:47:53.919-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.919-0400] {dag.py:2763} INFO - Creating ORM DAG for example_task_group_decorator
+[2023-07-30T18:47:53.923-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:53.923-0400] {dag.py:3504} INFO - Setting next_dagrun for example_task_group_decorator to 2023-07-29T22:47:53.923163+00:00, run_after=2023-07-30T22:47:53.923163+00:00
+[2023-07-30T18:47:53.929-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.362 seconds

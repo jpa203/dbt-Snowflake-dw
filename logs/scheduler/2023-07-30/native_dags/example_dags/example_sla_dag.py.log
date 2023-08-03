@@ -1,0 +1,11 @@
+[2023-07-30T18:47:59.476-0400] {processor.py:157} INFO - Started process (PID=16833) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py
+[2023-07-30T18:47:59.478-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2023-07-30T18:47:59.478-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.478-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py
+[2023-07-30T18:47:59.515-0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sla_dag']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py
+[2023-07-30T18:47:59.818-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.818-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_sla_dag
+[2023-07-30T18:47:59.821-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.821-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_sla_dag
+[2023-07-30T18:47:59.823-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.823-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_sla_dag
+[2023-07-30T18:47:59.826-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.826-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:47:59.829-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.829-0400] {dag.py:2763} INFO - Creating ORM DAG for example_sla_dag
+[2023-07-30T18:47:59.833-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:59.833-0400] {dag.py:3504} INFO - Setting next_dagrun for example_sla_dag to 2023-07-30T22:44:00+00:00, run_after=2023-07-30T22:46:00+00:00
+[2023-07-30T18:47:59.839-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py took 0.363 seconds

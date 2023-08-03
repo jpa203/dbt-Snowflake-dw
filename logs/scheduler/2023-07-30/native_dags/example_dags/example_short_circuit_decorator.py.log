@@ -1,0 +1,11 @@
+[2023-07-30T18:48:03.446-0400] {processor.py:157} INFO - Started process (PID=16836) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2023-07-30T18:48:03.448-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py for tasks to queue
+[2023-07-30T18:48:03.448-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.448-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2023-07-30T18:48:03.486-0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_short_circuit_decorator']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py
+[2023-07-30T18:48:03.794-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.794-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_short_circuit_decorator
+[2023-07-30T18:48:03.798-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.798-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_short_circuit_decorator
+[2023-07-30T18:48:03.800-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.800-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_short_circuit_decorator
+[2023-07-30T18:48:03.804-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.804-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:48:03.807-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.806-0400] {dag.py:2763} INFO - Creating ORM DAG for example_short_circuit_decorator
+[2023-07-30T18:48:03.809-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:03.809-0400] {dag.py:3504} INFO - Setting next_dagrun for example_short_circuit_decorator to 2023-07-29T22:48:03.809480+00:00, run_after=2023-07-30T22:48:03.809480+00:00
+[2023-07-30T18:48:03.816-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py took 0.369 seconds

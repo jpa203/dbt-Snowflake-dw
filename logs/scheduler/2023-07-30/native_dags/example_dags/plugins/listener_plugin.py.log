@@ -1,0 +1,10 @@
+[2023-07-30T18:47:34.534-0400] {processor.py:157} INFO - Started process (PID=16784) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-07-30T18:47:34.535-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-07-30T18:47:34.536-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:34.536-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-07-30T18:47:34.536-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-07-30T18:47:34.824-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.291 seconds
+[2023-07-30T18:49:55.527-0400] {processor.py:157} INFO - Started process (PID=17312) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-07-30T18:49:55.529-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-07-30T18:49:55.529-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:49:55.529-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-07-30T18:49:55.530-0400] {processor.py:838} WARNING - No viable dags retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-07-30T18:49:55.807-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.281 seconds

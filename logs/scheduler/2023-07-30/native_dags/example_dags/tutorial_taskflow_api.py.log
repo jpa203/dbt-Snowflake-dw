@@ -1,0 +1,18 @@
+[2023-07-30T18:47:39.660-0400] {processor.py:157} INFO - Started process (PID=16798) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2023-07-30T18:47:39.661-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2023-07-30T18:47:39.661-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:39.661-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2023-07-30T18:47:39.696-0400] {processor.py:836} INFO - DAG(s) dict_keys(['tutorial_taskflow_api']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2023-07-30T18:47:39.999-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:39.999-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:tutorial_taskflow_api
+[2023-07-30T18:47:40.002-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:40.002-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:tutorial_taskflow_api
+[2023-07-30T18:47:40.004-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:40.004-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:tutorial_taskflow_api
+[2023-07-30T18:47:40.007-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:40.007-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:47:40.010-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:40.010-0400] {dag.py:2763} INFO - Creating ORM DAG for tutorial_taskflow_api
+[2023-07-30T18:47:40.013-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:40.013-0400] {dag.py:3504} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2023-07-30T18:47:40.020-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.360 seconds
+[2023-07-30T18:50:00.669-0400] {processor.py:157} INFO - Started process (PID=17320) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2023-07-30T18:50:00.670-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2023-07-30T18:50:00.670-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:50:00.670-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2023-07-30T18:50:00.704-0400] {processor.py:836} INFO - DAG(s) dict_keys(['tutorial_taskflow_api']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2023-07-30T18:50:00.719-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:50:00.719-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:50:00.963-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:50:00.963-0400] {dag.py:3504} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2023-07-30T18:50:00.969-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.301 seconds

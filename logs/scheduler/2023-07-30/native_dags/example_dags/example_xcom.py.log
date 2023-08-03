@@ -1,0 +1,11 @@
+[2023-07-30T18:47:45.542-0400] {processor.py:157} INFO - Started process (PID=16811) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py
+[2023-07-30T18:47:45.544-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2023-07-30T18:47:45.544-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.544-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py
+[2023-07-30T18:47:45.579-0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py
+[2023-07-30T18:47:45.864-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.864-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_xcom
+[2023-07-30T18:47:45.867-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.867-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_xcom
+[2023-07-30T18:47:45.868-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.868-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_xcom
+[2023-07-30T18:47:45.872-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.872-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:47:45.875-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.875-0400] {dag.py:2763} INFO - Creating ORM DAG for example_xcom
+[2023-07-30T18:47:45.878-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:47:45.878-0400] {dag.py:3504} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00, run_after=2021-01-01T00:00:00+00:00
+[2023-07-30T18:47:45.884-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py took 0.342 seconds

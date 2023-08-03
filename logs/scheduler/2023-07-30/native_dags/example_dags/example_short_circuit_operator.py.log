@@ -1,0 +1,11 @@
+[2023-07-30T18:48:02.479-0400] {processor.py:157} INFO - Started process (PID=16835) to work on /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2023-07-30T18:48:02.481-0400] {processor.py:826} INFO - Processing file /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2023-07-30T18:48:02.481-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.481-0400] {dagbag.py:541} INFO - Filling up the DagBag from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2023-07-30T18:48:02.513-0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_short_circuit_operator']) retrieved from /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2023-07-30T18:48:02.810-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.810-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_short_circuit_operator
+[2023-07-30T18:48:02.813-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.813-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_short_circuit_operator
+[2023-07-30T18:48:02.815-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.815-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_short_circuit_operator
+[2023-07-30T18:48:02.818-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.818-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-30T18:48:02.821-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.821-0400] {dag.py:2763} INFO - Creating ORM DAG for example_short_circuit_operator
+[2023-07-30T18:48:02.824-0400] {logging_mixin.py:150} INFO - [2023-07-30T18:48:02.824-0400] {dag.py:3504} INFO - Setting next_dagrun for example_short_circuit_operator to 2023-07-29T22:48:02.824040+00:00, run_after=2023-07-30T22:48:02.824040+00:00
+[2023-07-30T18:48:02.833-0400] {processor.py:179} INFO - Processing /Users/jazzopardi/dev/dw/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.354 seconds
